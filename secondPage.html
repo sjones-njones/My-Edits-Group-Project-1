@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="bg-img" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/secondPage.css" />
+  <title>House Value</title>
+</head>
+
+<body class="mt-5 is-align-content-center has-text-centered">
+  <header class="m-3">
+    <h1 class="has-text-weight-semibold is-size-2-tablet">
+      Your House is worth
+      <span class="bitcoinValue"></span>
+
+    </h1>
+  </header>
+  <div class="columns is-centered">
+    <main class="column is-narrow bulma-overlay-mixin p-4 m-4">
+      <!-- house scr will be added dynamically to img with search -->
+      <div class="m-3 p-3">
+        <img id="picture" src="" alt="Picture of user's house" width="475" height="315">
+        <h3 class="address"></h3>
+      </div>
+    </main>
+  </div>
+
+  <button class="button is-link" id="homeBtn">
+    Go Back
+  </button>
+
+  <footer class="mt-5 pt-5">
+    <H4 class="has-text-white-ter mt-5 pt-5">Produced by group-6 aka the Wolves of Website</H4>
+  </footer>
+
+  <!--linked jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <!--linked secondPage.js-->
+  <script src="./assets/js/secondPage.js"></script>
+
+  <div class="modal">
+    <div class="modal-background">
+      <div class="modal-content">
+        <div class="message is-danger ">
+          <div class="message-header">
+        Alert!
+          </div>
+        <div class="message-body">          
+        </div>
+
+        </div>
+        </div>
+          
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </div>
+
+</body>
+
+</html>
